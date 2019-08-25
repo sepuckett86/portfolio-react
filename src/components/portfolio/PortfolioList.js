@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import PorfolioItem from './PortfolioItem';
+import styles from './PortfolioList.css';
 
 function PortfolioList({ projects }) {
   const projectItems = projects.map(project => {
@@ -16,7 +17,7 @@ function PortfolioList({ projects }) {
   });
 
   return (
-    <ul>
+    <ul className={styles.PortfolioList}>
       {projectItems}
     </ul>
   );
