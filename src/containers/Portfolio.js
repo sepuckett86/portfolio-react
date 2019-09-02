@@ -23,16 +23,8 @@ export default class Portfolio extends Component {
         tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass']
       }
     ],
-    tags: [
-      'React', 
-      'Redux', 
-      'Node.js', 
-      'HTML', 
-      'CSS', 
-      'Bootstrap',
-      'Python'
-    ],
-    selectedTags: {}
+    tags: [],
+    selectedTag: ''
   }
 
   componentDidMount() {
@@ -40,38 +32,35 @@ export default class Portfolio extends Component {
   }
 
   generateTags() {
-    return this.state.projects.reduce((acc, project) => {
+    const tagDictionary = this.state.projects.reduce((acc, project) => {
       project.tags.forEach(tag => {
-        if(!acc.includes(tag)) acc.push(tag);
+        if(!acc[tag]) acc[tag] = 1;
+        else acc[tag]++;
       });
       return acc;
-    }, []);
+    }, {});
+    return Object.entries(tagDictionary);
+    // return tagArray.sort(([, a], [, b]) => a < b ? 1 : -1);
   }
 
   handleClick = ({ target }) => {
-    this.setState(state => {
-      return {
-        selectedTags: { 
-          ...state.selectedTags, 
-          [target.name]: !state.selectedTags[target.name] 
-        } 
-      };
-    });
-  }
+    if(this.state.selectedTag === target.name) {
+      this.setState({ selectedTag: 'all' });
+    } else {
+      this.setState({
+        selectedTag: target.name
+      });
+    }
+  };
+
 
   makeSelectedProjects() {
-    const selectedTags = Object.keys(this.state.selectedTags).filter(key => {
-      return this.state.selectedTags[key];
-    });
-
     const filtered = this.state.projects.filter(project => {
-      return selectedTags.some(key => project.tags.includes(key));
+      return project.tags.includes(this.state.selectedTag);
     });
-
     if(filtered.length === 0) {
       return this.state.projects;
     }
-
     return filtered;
   }
 
@@ -84,7 +73,7 @@ export default class Portfolio extends Component {
         <PortfolioTags 
           tags={this.state.tags} 
           handleClick={this.handleClick}
-          selectedTags={this.state.selectedTags} />
+          selectedTag={this.state.selectedTag} />
         <PortfolioList projects={selectedProjects} />
       </section>
     );
