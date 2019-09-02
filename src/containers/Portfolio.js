@@ -17,6 +17,10 @@ export default class Portfolio extends Component {
       {
         title: 'My App3',
         tags: ['HTML', 'CSS', 'Bootstrap']
+      },
+      {
+        title: 'My App4',
+        tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass']
       }
     ],
     tags: [
@@ -55,7 +59,25 @@ export default class Portfolio extends Component {
     });
   }
 
+  makeSelectedProjects() {
+    const selectedTags = Object.keys(this.state.selectedTags).filter(key => {
+      return this.state.selectedTags[key];
+    });
+
+    const filtered = this.state.projects.filter(project => {
+      return selectedTags.some(key => project.tags.includes(key));
+    });
+
+    if(filtered.length === 0) {
+      return this.state.projects;
+    }
+
+    return filtered;
+  }
+
   render() {
+    const selectedProjects = this.makeSelectedProjects();
+
     return (
       <section>
         <h2>Portfolio</h2>
@@ -63,7 +85,7 @@ export default class Portfolio extends Component {
           tags={this.state.tags} 
           handleClick={this.handleClick}
           selectedTags={this.state.selectedTags} />
-        <PortfolioList projects={this.state.projects} />
+        <PortfolioList projects={selectedProjects} />
       </section>
     );
   }
