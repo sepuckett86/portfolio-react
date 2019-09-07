@@ -12,7 +12,8 @@ class IntroContainer extends Component {
       'Fun fact: according to the Gallup Clifton Strengths test, my top strengths are adaptability, learner, intellection, input, and responsibility.',
       'On the fence about the trailing comma.',
       'One of my life goals is to play in clarinet in a community band until I die.',
-      'Over 1.1k Github contributions in the past year as of Sept 2019.'
+      'Over 1.1k Github contributions in the past year as of Sept 2019.',
+      'Over 800 hours of full-stack JavaScript app development in a cohort of 19 people.'
     ],
     strengths: [
       'detail-oriented',
