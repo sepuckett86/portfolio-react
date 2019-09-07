@@ -1,0 +1,16 @@
+.PortfolioTags {
+  list-style: none;
+  margin: 2em;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  button {
+    margin: 3px;
+  }
+
+  .selected {
+    border: black 3px solid;
+  }
+}

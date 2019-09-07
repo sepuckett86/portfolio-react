@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './PortfolioItem.css';
 
 function PortfolioItem({ title, tags }) {
   const tagElements = tags.map(tag => {
@@ -7,7 +8,7 @@ function PortfolioItem({ title, tags }) {
   });
 
   return (
-    <section>
+    <section className={styles.PortfolioItem}>
       <h3>{title}</h3>
       {tagElements}
     </section>
@@ -16,7 +17,7 @@ function PortfolioItem({ title, tags }) {
 
 PortfolioItem.propTypes = {
   title: PropTypes.string.isRequired,
-  tags: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
 };
 
 export default PortfolioItem;
