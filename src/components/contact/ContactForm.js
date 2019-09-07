@@ -7,14 +7,14 @@ const encode = (data) => {
 };
 
 class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: '', email: '', message: '' };
-  }
-
-  /* Here’s the juicy bit for posting the form submission */
+  state = { 
+    name: '', 
+    email: '', 
+    message: '' 
+  };
 
   handleSubmit = e => {
+    e.preventDefault();
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -22,8 +22,6 @@ class ContactForm extends Component {
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
-
-    e.preventDefault();
   };
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
