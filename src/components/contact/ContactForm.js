@@ -24,7 +24,11 @@ class ContactForm extends Component {
       .catch(error => alert(error));
   };
 
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  handleChange = ({ target }) => {
+    this.setState({ 
+      [target.name]: target.value 
+    });
+  }
 
   render() {
     const { name, email, message } = this.state;
