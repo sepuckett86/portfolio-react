@@ -7,8 +7,8 @@ function Header() {
     <header className={styles.Header}>
       <p className={styles.name}>Susan Puckett</p>
       <ul>
-        <li>Link</li>
-        <li>Link</li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Link</a></li>
       </ul>
     </header>
   );
