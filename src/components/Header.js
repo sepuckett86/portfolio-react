@@ -8,7 +8,7 @@ function Header() {
       <p className={styles.name}>Susan Puckett</p>
       <ul>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Link</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
   );

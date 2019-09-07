@@ -68,7 +68,7 @@ export default class Portfolio extends Component {
     const selectedProjects = this.makeSelectedProjects();
 
     return (
-      <section>
+      <section id="portfolio">
         <h2>Portfolio</h2>
         <PortfolioTags 
           tags={this.state.tags} 
