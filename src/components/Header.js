@@ -5,8 +5,9 @@ import styles from './Header.css';
 function Header() {
   return (
     <header className={styles.Header}>
-      Header
+      <p className={styles.name}>Susan Puckett</p>
       <ul>
+        <li>Link</li>
         <li>Link</li>
       </ul>
     </header>
