@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './ContactForm.css';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -24,31 +25,38 @@ class ContactForm extends Component {
       .catch(error => alert(error));
   };
 
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  handleChange = ({ target }) => {
+    this.setState({ 
+      [target.name]: target.value 
+    });
+  }
 
   render() {
     const { name, email, message } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <p>
-          <label>
+      <section id="contact" className={styles.ContactForm}>
+        <h2>Get in touch!</h2>
+        <form onSubmit={this.handleSubmit}>
+          <p>
+            <label>
             Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
+            </label>
+          </p>
+          <p>
+            <label>
             Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
+            </label>
+          </p>
+          <p>
+            <label>
             Message: <textarea name="message" value={message} onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </section>
     );
   }
 }

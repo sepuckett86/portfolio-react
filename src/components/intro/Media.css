@@ -1,0 +1,8 @@
+.Media {
+  display: flex;
+  justify-content: center;
+  i {
+    font-size: 4em;
+    padding: 0.2em;
+  }
+}
