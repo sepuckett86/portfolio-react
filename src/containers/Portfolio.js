@@ -74,6 +74,7 @@ export default class Portfolio extends Component {
     return (
       <section id="portfolio">
         <h2>Portfolio</h2>
+        <h2>UNDER CONSTRUCTION</h2>
         <PortfolioTags 
           tags={this.state.tags} 
           handleClick={this.handleClick}
