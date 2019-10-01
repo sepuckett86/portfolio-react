@@ -8,18 +8,22 @@ export default class Portfolio extends Component {
     projects: [
       {
         title: 'My App',
+        description: 'This is a neat little app with burgeoning capabilities.',
         tags: ['React', 'Redux', 'Node.js']
       },
       {
         title: 'My App2',
+        description: 'This is a neat little app with burgeoning capabilities.',
         tags: ['HTML', 'CSS', 'Bootstrap']
       },
       {
         title: 'My App3',
+        description: 'This is a neat little app with burgeoning capabilities.',
         tags: ['HTML', 'CSS', 'Bootstrap']
       },
       {
         title: 'My App4',
+        description: 'This is a neat little app with burgeoning capabilities.',
         tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass']
       }
     ],
