@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Media.css';
 
-function Media() {
+export default function Media() {
   return (
     <div className={styles.Media}>
       <a href="https://github.com/sepuckett86" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" aria-hidden="true"></i></a>
@@ -11,6 +11,3 @@ function Media() {
     </div>
   );
 }
-
-export default Media;
-

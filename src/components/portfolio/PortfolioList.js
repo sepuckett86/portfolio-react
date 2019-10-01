@@ -6,11 +6,11 @@ import styles from './PortfolioList.css';
 
 function PortfolioList({ projects }) {
   const projectItems = projects.map(project => {
-    const { title, tags } = project;
+    const { title, tags, description } = project;
 
     return (
-      <li key={title}>
-        <PorfolioItem title={title} tags={tags} />
+      <li key={title} className={styles.portfolioLi}>
+        <PorfolioItem title={title} tags={tags} description={description} />
       </li>
     );
     

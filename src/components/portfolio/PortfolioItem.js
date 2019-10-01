@@ -2,15 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './PortfolioItem.css';
 
-function PortfolioItem({ title, tags }) {
+function PortfolioItem({ title, tags, description }) {
   const tagElements = tags.map(tag => {
-    return <p key={tag}>{tag}</p>;
+    return <li key={tag}>{tag}</li>;
   });
 
   return (
     <section className={styles.PortfolioItem}>
       <h3>{title}</h3>
-      {tagElements}
+      {description}
+      <ul className={styles.tags}>
+        {tagElements}
+      </ul>
     </section>
   );
 }
@@ -18,6 +21,7 @@ function PortfolioItem({ title, tags }) {
 PortfolioItem.propTypes = {
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
+  description: PropTypes.string.isRequired
 };
 
 export default PortfolioItem;

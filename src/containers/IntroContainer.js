@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Intro from '../components/intro/Intro';
-import Media from '../components/intro/Media';
 
 class IntroContainer extends Component {
   state = {
@@ -34,7 +33,6 @@ class IntroContainer extends Component {
     return (
       <>
       <Intro introStatements={this.state.introStatements} strengths={this.state.strengths} weaknesses={this.state.weaknesses} />
-      <Media />
       </>
     );
   }

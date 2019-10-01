@@ -37,24 +37,37 @@ class ContactForm extends Component {
       <section id="contact" className={styles.ContactForm}>
         <h2>Get in touch!</h2>
         <form onSubmit={this.handleSubmit}>
-          <p>
-            <label>
-            Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-            Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-            Message: <textarea name="message" value={message} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          
+          <label>
+            <h3>Your Name:</h3> 
+            <input 
+              type="text" 
+              name="name" 
+              value={name} 
+              onChange={this.handleChange} 
+            />
+          </label>
+         
+          
+          <label>
+            <h3>Your Email:</h3>
+            <input 
+              type="email" 
+              name="email" 
+              value={email} 
+              onChange={this.handleChange} 
+            />
+          </label>
+          <label>
+            <h3>Message:</h3>
+            <textarea 
+              name="message" 
+              value={message} 
+              onChange={this.handleChange} 
+              placeholder="Write a note here"
+            />
+          </label>
+          <button type="submit">Send</button>
         </form>
       </section>
     );
