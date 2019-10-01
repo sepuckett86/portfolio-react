@@ -1,8 +1,13 @@
 .Media {
   display: flex;
   justify-content: center;
+  margin: 1rem;
   i {
     font-size: 4em;
     padding: 0.2em;
+    color: whitesmoke;
+  }
+  i:hover {
+    color: rgb(10, 146, 123);
   }
 }

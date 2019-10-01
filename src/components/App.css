@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Gloria+Hallelujah|Montserrat:100&display=swap');
 
 body {
   margin: 0px;
@@ -15,3 +16,4 @@ main {
 h1, h2 {
   text-align: center;
 }
+

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Intro.css';
 import PropTypes from 'prop-types';
+import Media from './Media';
 
 function Intro({ introStatements }) {
   const [index, setIndex] = useState(0);
@@ -8,10 +9,13 @@ function Intro({ introStatements }) {
 
   return (
     <section className={styles.Intro}>
-      <h1>Susan Puckett</h1>
-      <h2>Software Developer</h2>
-      <p>{statement}</p>
-      <button onClick={() => index < introStatements.length - 1 ? setIndex(index + 1) : setIndex(0)}>Next</button>
+      <h1>SUSAN PUCKETT</h1>
+      <h2>SOFTWARE DEVELOPER</h2>
+      <p>
+        {statement}
+        <button onClick={() => index < introStatements.length - 1 ? setIndex(index + 1) : setIndex(0)}>Next</button>
+      </p>
+      <Media />
     </section>
   );
 }
