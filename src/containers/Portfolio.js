@@ -7,24 +7,36 @@ export default class Portfolio extends Component {
   state = {
     projects: [
       {
-        title: 'My App',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['React', 'Redux', 'Node.js']
+        title: 'Newzie',
+        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @alex @carlos @leighann.',
+        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Auth0', 'Netlify', 'Heroku'],
+        github: 'https://github.com/The-Newsies/newsies-fe',
+        url: 'https://newzie.netlify.com',
+        image: 'Newzie.png'
       },
       {
         title: 'My App2',
         description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['HTML', 'CSS', 'Bootstrap']
+        tags: ['HTML', 'CSS', 'Bootstrap'],
+        github: 'https://github.com/The-Newsies/newsies-fe',
+        url: 'https://newzie.netlify.com',
+        image: 'Newzie.png'
       },
       {
         title: 'My App3',
         description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['HTML', 'CSS', 'Bootstrap']
+        tags: ['HTML', 'CSS', 'Bootstrap'],
+        github: 'https://github.com/The-Newsies/newsies-fe',
+        url: 'https://newzie.netlify.com',
+        image: 'Newzie.png'
       },
       {
         title: 'My App4',
         description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass']
+        tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass'],
+        github: 'https://github.com/The-Newsies/newsies-fe',
+        url: 'https://newzie.netlify.com',
+        image: 'Newzie.png'
       }
     ],
     tags: [],

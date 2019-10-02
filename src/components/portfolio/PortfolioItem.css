@@ -1,4 +1,18 @@
 .PortfolioItem {
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  img {
+    width: 100%;
+  }
+  i {
+    font-size: 1.7em;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .tags {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.8em;
@@ -6,8 +20,9 @@
     padding-left: 0px;
     margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
     li {
       padding-right: 1rem;
-    }
+    } 
   }
 }

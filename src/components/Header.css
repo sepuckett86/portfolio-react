@@ -1,5 +1,5 @@
 .Header {
-  line-height: 50px;
+  line-height: 40px;
   background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
@@ -15,10 +15,13 @@
   
   li {
     margin-left: 2em;
+    font-family: 'Montserrat', sans-serif;
+    color: #952024;
   }
 
   .name {
     margin-left: 1em;
     font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
   }
 }
