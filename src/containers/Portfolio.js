@@ -7,24 +7,36 @@ export default class Portfolio extends Component {
   state = {
     projects: [
       {
-        title: 'My App',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['React', 'Redux', 'Node.js']
+        title: 'Newzie 📰',
+        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, and @aramirezdecruz3148.',
+        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku'],
+        github: 'https://github.com/The-Newsies/newsies-fe',
+        url: 'https://newzie.netlify.com',
+        image: 'Newzie.png'
       },
       {
-        title: 'My App2',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['HTML', 'CSS', 'Bootstrap']
+        title: 'BidUp! 💸',
+        description: 'Full-stack auction app with realtime bidding for multiple users. Created on a team with @liliboxer, @lacrivella, @carlosus, and @codingclueless.',
+        tags: ['Firebase', 'VanillaJS', 'TravisCI'],
+        github: 'https://github.com/bid-up/BidUp',
+        url: 'https://biduponline.com/',
+        image: 'BidUp!.png'
       },
       {
-        title: 'My App3',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['HTML', 'CSS', 'Bootstrap']
+        title: 'Harmonie 🎶',
+        description: 'Back-end band management app with Twilio text alert integration. Created with @zbutler93 and @carlosus.',
+        tags: ['MongoDB', 'Mongoose', 'Heroku', 'Twilio', 'Jest', 'Express', 'Node.js', 'TravisCI'],
+        github: 'https://github.com/band-tracker/Harmonie',
+        url: 'https://github.com/band-tracker/Harmonie',
+        image: 'Harmonie.png'
       },
       {
-        title: 'My App4',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass']
+        title: 'Karie Mondo 📦',
+        description: 'Front-end game based on Tidying Up with Marie Kondo as a playful way to introduce ourselves. Created with @eringurley and @aramirezdecruz3148 ',
+        tags: ['VanillaJS', 'TravisCI', 'QUnit'],
+        github: 'https://github.com/team-tidy/Karie-Mondo',
+        url: 'https://team-tidy.github.io/Karie-Mondo/',
+        image: 'Karie-Mondo.png'
       }
     ],
     tags: [],
@@ -74,7 +86,6 @@ export default class Portfolio extends Component {
     return (
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <h2>UNDER CONSTRUCTION</h2>
         <PortfolioTags 
           tags={this.state.tags} 
           handleClick={this.handleClick}

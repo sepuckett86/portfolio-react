@@ -13,5 +13,23 @@ main {
 }
 
 h1, h2 {
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

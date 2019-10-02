@@ -5,7 +5,7 @@ import styles from './Header.css';
 function Header() {
   return (
     <header className={styles.Header}>
-      <p className={styles.name}>Susan Puckett</p>
+      <p className={styles.name}>Hello and welcome!</p>
       <ul>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
