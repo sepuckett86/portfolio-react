@@ -10,13 +10,20 @@
     margin: 3px;
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
+    border-radius: 10px;
+    outline: none;
   }
 
   button:hover {
     background-image: linear-gradient(-20deg, #11af94 0%, #9be4df 100%);
   }
 
+  button:focus {
+    background-image: linear-gradient(-20deg, #11af94 0%, #9be4df 100%);
+  }
+
   .selected {
     border: black 3px solid;
+    background-image: linear-gradient(-20deg, #11af94 0%, #9be4df 100%);
   }
 }

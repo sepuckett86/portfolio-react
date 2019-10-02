@@ -25,7 +25,7 @@ export default class Portfolio extends Component {
       {
         title: 'Harmonie 🎶',
         description: 'Back-end band management app with Twilio text alert integration. Created with @zbutler93 and @carlosus.',
-        tags: ['MongoDB', 'Mongoose', 'Heroku', 'Twilio', 'Jest', 'Express', 'Node.js', 'TravisCI'],
+        tags: ['MongoDB', 'Mongoose', 'Compass', 'Postman', 'Heroku', 'Twilio', 'Jest', 'Express', 'Node.js', 'TravisCI'],
         github: 'https://github.com/band-tracker/Harmonie',
         url: 'https://github.com/band-tracker/Harmonie',
         image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993987/Harmonie_ix59ae.png'
@@ -40,7 +40,7 @@ export default class Portfolio extends Component {
       }
     ],
     tags: [],
-    selectedTag: ''
+    selectedTag: 'all'
   }
 
   componentDidMount() {
