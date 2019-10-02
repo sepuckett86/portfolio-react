@@ -7,36 +7,20 @@ export default class Portfolio extends Component {
   state = {
     projects: [
       {
-        title: 'Newzie',
-        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @alex @carlos @leighann.',
+        title: 'Newzie 📰',
+        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, @aramirezdecruz3148.',
         tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Auth0', 'Netlify', 'Heroku'],
         github: 'https://github.com/The-Newsies/newsies-fe',
         url: 'https://newzie.netlify.com',
         image: 'Newzie.png'
       },
       {
-        title: 'My App2',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['HTML', 'CSS', 'Bootstrap'],
-        github: 'https://github.com/The-Newsies/newsies-fe',
-        url: 'https://newzie.netlify.com',
-        image: 'Newzie.png'
-      },
-      {
-        title: 'My App3',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['HTML', 'CSS', 'Bootstrap'],
-        github: 'https://github.com/The-Newsies/newsies-fe',
-        url: 'https://newzie.netlify.com',
-        image: 'Newzie.png'
-      },
-      {
-        title: 'My App4',
-        description: 'This is a neat little app with burgeoning capabilities.',
-        tags: ['MongoDB', 'Mongoose', 'Node.js', 'Compass'],
-        github: 'https://github.com/The-Newsies/newsies-fe',
-        url: 'https://newzie.netlify.com',
-        image: 'Newzie.png'
+        title: 'BidUp! 💸',
+        description: 'Full-stack auction app with realtime bidding for multiple users. Created on a team with @liliboxer, @lacrivella, @carlosus, @codingclueless',
+        tags: ['Firebase', 'VanillaJS'],
+        github: 'https://github.com/bid-up/BidUp',
+        url: 'https://biduponline.com/',
+        image: 'BidUp!.png'
       }
     ],
     tags: [],
