@@ -8,19 +8,35 @@ export default class Portfolio extends Component {
     projects: [
       {
         title: 'Newzie 📰',
-        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, @aramirezdecruz3148.',
-        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Auth0', 'Netlify', 'Heroku'],
+        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, and @aramirezdecruz3148.',
+        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku'],
         github: 'https://github.com/The-Newsies/newsies-fe',
         url: 'https://newzie.netlify.com',
         image: 'Newzie.png'
       },
       {
         title: 'BidUp! 💸',
-        description: 'Full-stack auction app with realtime bidding for multiple users. Created on a team with @liliboxer, @lacrivella, @carlosus, @codingclueless',
-        tags: ['Firebase', 'VanillaJS'],
+        description: 'Full-stack auction app with realtime bidding for multiple users. Created on a team with @liliboxer, @lacrivella, @carlosus, and @codingclueless.',
+        tags: ['Firebase', 'VanillaJS', 'TravisCI'],
         github: 'https://github.com/bid-up/BidUp',
         url: 'https://biduponline.com/',
         image: 'BidUp!.png'
+      },
+      {
+        title: 'Harmonie 🎶',
+        description: 'Back-end band management app with Twilio text alert integration. Created with @zbutler93 and @carlosus.',
+        tags: ['MongoDB', 'Mongoose', 'Heroku', 'Twilio', 'Jest', 'Express', 'Node.js', 'TravisCI'],
+        github: 'https://github.com/band-tracker/Harmonie',
+        url: 'https://github.com/band-tracker/Harmonie',
+        image: 'Harmonie.png'
+      },
+      {
+        title: 'Karie Mondo 📦',
+        description: 'Front-end game based on Tidying Up with Marie Kondo as a playful way to introduce ourselves. Created with @eringurley and @aramirezdecruz3148 ',
+        tags: ['VanillaJS', 'TravisCI', 'QUnit'],
+        github: 'https://github.com/team-tidy/Karie-Mondo',
+        url: 'https://team-tidy.github.io/Karie-Mondo/',
+        image: 'Karie-Mondo.png'
       }
     ],
     tags: [],
@@ -70,7 +86,6 @@ export default class Portfolio extends Component {
     return (
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <h2>UNDER CONSTRUCTION</h2>
         <PortfolioTags 
           tags={this.state.tags} 
           handleClick={this.handleClick}

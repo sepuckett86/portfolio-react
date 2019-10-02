@@ -8,7 +8,7 @@ function PortfolioItem({ title, tags, description, github, url, image }) {
   });
 
   return (
-    <section className={styles.PortfolioItem}>
+    <div className={styles.PortfolioItem}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         <img src={`src/images/${image}`} alt={title}/>
       </a>
@@ -24,8 +24,7 @@ function PortfolioItem({ title, tags, description, github, url, image }) {
       <ul className={styles.tags}>
         {tagElements}
       </ul>
-      
-    </section>
+    </div>
   );
 }
 
