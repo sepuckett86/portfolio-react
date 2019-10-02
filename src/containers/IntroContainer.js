@@ -8,7 +8,7 @@ class IntroContainer extends Component {
       'An introvert who also thrives in teams, I like to find that sweet balance of collaboration and solo focus.',
       'According to the Gallup Clifton Strengths test, my top strengths are adaptability, learner, intellection, input, and responsibility.',
       'On the fence about the trailing comma.',
-      'One of my life goals is to play in clarinet in a community band until I die.',
+      'One of my life goals is to play clarinet in a community band until I die.',
       'Over 1.1k Github contributions in the past year as of Sept 2019. Please give me a job already. ;)',
       'Over 800 hours of full-stack JavaScript app development experience in a cohort of 19 wonderful people.',
       'My top bucket list item: Visit a sloth sanctuary in Costa Rica.',
