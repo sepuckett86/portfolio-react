@@ -1,6 +1,7 @@
 .Media {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 1rem;
   i {
     font-size: 4em;
@@ -9,5 +10,10 @@
   }
   i:hover {
     color: rgb(10, 146, 123);
+  }
+  @media (max-width: 500px) {
+    i {
+      font-size: 3em;
+    }
   }
 }
