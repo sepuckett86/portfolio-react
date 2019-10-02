@@ -9,10 +9,10 @@ export default class Portfolio extends Component {
       {
         title: 'Newzie 📰',
         description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, and @aramirezdecruz3148.',
-        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku'],
+        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Express', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku'],
         github: 'https://github.com/The-Newsies/newsies-fe',
         url: 'https://newzie.netlify.com',
-        image: 'Newzie.png'
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993992/Newzie_shdgvl.png'
       },
       {
         title: 'BidUp! 💸',
@@ -20,7 +20,7 @@ export default class Portfolio extends Component {
         tags: ['Firebase', 'VanillaJS', 'TravisCI'],
         github: 'https://github.com/bid-up/BidUp',
         url: 'https://biduponline.com/',
-        image: 'BidUp!.png'
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993985/BidUp_u7b1jz.png'
       },
       {
         title: 'Harmonie 🎶',
@@ -28,7 +28,7 @@ export default class Portfolio extends Component {
         tags: ['MongoDB', 'Mongoose', 'Heroku', 'Twilio', 'Jest', 'Express', 'Node.js', 'TravisCI'],
         github: 'https://github.com/band-tracker/Harmonie',
         url: 'https://github.com/band-tracker/Harmonie',
-        image: 'Harmonie.png'
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993987/Harmonie_ix59ae.png'
       },
       {
         title: 'Karie Mondo 📦',
@@ -36,7 +36,7 @@ export default class Portfolio extends Component {
         tags: ['VanillaJS', 'TravisCI', 'QUnit'],
         github: 'https://github.com/team-tidy/Karie-Mondo',
         url: 'https://team-tidy.github.io/Karie-Mondo/',
-        image: 'Karie-Mondo.png'
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993990/Karie-Mondo_rblpjd.png'
       }
     ],
     tags: [],

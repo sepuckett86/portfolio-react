@@ -3,6 +3,7 @@
 body {
   margin: 0px;
   font-family: 'Livvic', sans-serif;
+  font-size: 18px;
   display: flex;
   min-height: 100vh;
   flex-direction: column;

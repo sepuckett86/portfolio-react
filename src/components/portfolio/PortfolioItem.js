@@ -10,7 +10,7 @@ function PortfolioItem({ title, tags, description, github, url, image }) {
   return (
     <div className={styles.PortfolioItem}>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <img src={`src/images/${image}`} alt={title}/>
+        <img src={image} alt={title}/>
       </a>
       <div className={styles.top}>
         <a href={url} target="_blank" rel="noopener noreferrer">
