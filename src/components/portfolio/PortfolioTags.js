@@ -19,7 +19,9 @@ function PortfolioTags({ tags, handleClick, selectedTag }) {
         <button 
           name="all" 
           onClick={handleClick}
-          className={selectedTag === 'all' ? `${styles.selected} ${styles.all}` : styles.all}>All</button>
+          className={selectedTag === 'all' ? `${styles.selected} ${styles.all}` : styles.all}>
+          All
+        </button>
       </li>
     </ul>
     <ul className={styles.PortfolioTags}>

@@ -37,7 +37,6 @@ class ContactForm extends Component {
       <section id="contact" className={styles.ContactForm}>
         <h2>Get in touch!</h2>
         <form onSubmit={this.handleSubmit}>
-          
           <label>
             <h3>Your Name:</h3> 
             <input 
@@ -47,8 +46,6 @@ class ContactForm extends Component {
               onChange={this.handleChange} 
             />
           </label>
-         
-          
           <label>
             <h3>Your Email:</h3>
             <input 

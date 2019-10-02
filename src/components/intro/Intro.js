@@ -13,7 +13,7 @@ function Intro({ introStatements }) {
       <h2>SOFTWARE DEVELOPER</h2>
       <p>
         {statement}
-        <button onClick={() => index < introStatements.length - 1 ? setIndex(index + 1) : setIndex(0)}>Next</button>
+        <button onClick={() => index < introStatements.length - 1 ? setIndex(index + 1) : setIndex(0)}>🏵️</button>
       </p>
       <Media />
     </section>
