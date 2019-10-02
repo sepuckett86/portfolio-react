@@ -1,10 +1,8 @@
 .Footer {
   text-align: center;
   background-color: whitesmoke;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
+  padding: 1.2em 1em 1.2em 1em;
   font-family: 'Open Sans', sans-serif;
-
   .updated {
     font-size: 0.8em;
     color: grey;
