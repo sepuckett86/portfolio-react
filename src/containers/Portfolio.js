@@ -9,7 +9,7 @@ export default class Portfolio extends Component {
       {
         title: 'Newzie 📰',
         description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, and @aramirezdecruz3148.',
-        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Express', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku'],
+        tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Express', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku', 'HTML/CSS'],
         github: 'https://github.com/The-Newsies/newsies-fe',
         url: 'https://newzie.netlify.com',
         image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993992/Newzie_shdgvl.png'
@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
       {
         title: 'BidUp! 💸',
         description: 'Full-stack auction app with realtime bidding for multiple users. Created on a team with @liliboxer, @lacrivella, @carlosus, and @codingclueless.',
-        tags: ['Firebase', 'VanillaJS', 'TravisCI'],
+        tags: ['Firebase', 'VanillaJS', 'TravisCI', 'HTML/CSS'],
         github: 'https://github.com/bid-up/BidUp',
         url: 'https://biduponline.com/',
         image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993985/BidUp_u7b1jz.png'
@@ -33,10 +33,43 @@ export default class Portfolio extends Component {
       {
         title: 'Karie Mondo 📦',
         description: 'Front-end game based on Tidying Up with Marie Kondo as a playful way to introduce ourselves. Created with @eringurley and @aramirezdecruz3148 ',
-        tags: ['VanillaJS', 'TravisCI', 'QUnit'],
+        tags: ['VanillaJS', 'TravisCI', 'QUnit', 'HTML/CSS'],
         github: 'https://github.com/team-tidy/Karie-Mondo',
         url: 'https://team-tidy.github.io/Karie-Mondo/',
         image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993990/Karie-Mondo_rblpjd.png'
+      },
+      {
+        title: 'Biology of Skin Foundation',
+        description: 'Website and home page of the non-profit Biology of Skin Foundation. Coded and maintained by me.',
+        tags: ['VanillaJS', 'DreamHost', 'Bootstrap', 'HTML/CSS'],
+        github: 'https://github.com/sepuckett86/websites/tree/master/BSF',
+        url: 'https://biologyofskinfoundation.org/',
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1570477022/Biology_of_Skin_Foundation_ukoqbs.png'
+      },
+      {
+        title: 'Goodminder',
+        description: 'Website and web-app that allows you to collect, view, and make a PDF of meaningful text. I made the front-end and @codegold79 made the back-end.',
+        tags: ['React', 'Redux', 'JWT', 'HTML/CSS', 'Heroku', 'Node.js', 'Laravel', 'Bootstrap'],
+        github: 'https://github.com/sepuckett86/goodminder',
+        url: 'http://www.goodminder.com',
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1570478396/Goodminder_e1q85z.png'
+
+      },
+      {
+        title: 'Introvert Quest 💁',
+        description: 'Front-end game with multiple endings. Created as a solo project.',
+        tags: ['VanillaJS', 'QUnit', 'TravisCI', 'HTML/CSS'],
+        github: 'https://github.com/sepuckett86/week3-adventure-game',
+        url: 'https://sepuckett86.github.io/week3-adventure-game/',
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1570477888/Introvert_Quest_rsdp4o.png'
+      },
+      {
+        title: 'Mad Props',
+        description: 'Front-end app to help those with writer\'s block when it comes to thank you notes. A solo project.',
+        tags: ['React', 'HTML/CSS', 'Surge'],
+        github: 'https://github.com/sepuckett86/react/tree/master/madprops',
+        url: 'http://sepuckett86_madprops.surge.sh/',
+        image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1570478999/Mad_Props_r8qhkd.png'
       }
     ],
     tags: [],
