@@ -83,13 +83,12 @@ export default class Portfolio extends Component {
   generateTags() {
     const tagDictionary = this.state.projects.reduce((acc, project) => {
       project.tags.forEach(tag => {
-        if(!acc[tag]) acc[tag] = 1;
-        else acc[tag]++;
+        if(!acc[tag]) acc[tag] = 0;
+        acc[tag]++;
       });
       return acc;
     }, {});
     return Object.entries(tagDictionary);
-    // return tagArray.sort(([, a], [, b]) => a < b ? 1 : -1);
   }
 
   handleClick = ({ target }) => {
@@ -101,7 +100,6 @@ export default class Portfolio extends Component {
       });
     }
   };
-
 
   makeSelectedProjects() {
     const filtered = this.state.projects.filter(project => {
