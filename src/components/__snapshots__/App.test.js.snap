@@ -7,6 +7,7 @@ exports[`App component renders App 1`] = `
     <IntroContainer />
     <Portfolio />
     <ContactForm />
+    <GoodiesContainer />
   </main>
   <Footer />
 </Fragment>
