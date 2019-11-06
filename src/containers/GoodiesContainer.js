@@ -5,9 +5,24 @@ export default class GoodiesContainer extends Component {
   state = {
     links: [
       {
-        name: 'PorkBun',
+        name: 'Porkbun',
         url: 'https://porkbun.com/',
         purpose: 'Domain Registration'
+      },
+      {
+        name: 'WebGradients',
+        url: 'https://webgradients.com/',
+        purpose: 'CSS Gradient Code'
+      },
+      {
+        name: 'Paletton',
+        url: 'https://paletton.com/',
+        purpose: 'Color Schemes and Hex Codes'
+      },
+      {
+        name: 'Cloudinary',
+        url: 'https://cloudinary.com/',
+        purpose: 'Free Storage for Website Images/Media'
       }
     ]
   }

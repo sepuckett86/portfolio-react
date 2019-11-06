@@ -1,6 +1,6 @@
-.Favorites {
-  padding: 2%;
+.Goodies {
   text-align: center;
+  padding: 2em;
 
   code { 
     background-color: #eee; 
@@ -17,5 +17,9 @@
 
   ul {
     list-style: none;
+  }
+  .partition {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
   }
 }

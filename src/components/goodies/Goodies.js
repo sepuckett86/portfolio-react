@@ -10,25 +10,27 @@ export default function Goodies({ links }) {
   ));
 
   return (
-    <>
-    <section id="goodies" className={styles.Favorites}>
+    <section id="goodies" className={styles.Goodies}>
       <h2>Goodies 😊</h2>
       <p>Since you made it this far...</p>
       <hr />
-      <h3 id="favorites">My Favorite Things on the Internet</h3>
-      <ul>
-        {linkItems}
-      </ul>
+      <div className={styles.partition}>
+        <h3 id="favorites">My Favorite Things on the Internet</h3>
+        <ul>
+          {linkItems}
+        </ul>
+      </div>
       <hr />
-      <h3 id="shortcuts">VSCode Shortcuts for Mac</h3>
-      <h4>Guide to symbols:</h4>
-      <p><code>^</code> control</p>
-      <p><code>⌘</code> command</p>
-      <h4>Shortcuts:</h4>
-      <p><code>⌘ 0</code> go from main window to side bar</p>
-      <p><code>⌃ 0</code> go from side bar to main window</p>
+      <div className={styles.partition}>
+        <h3 id="shortcuts">VSCode Shortcuts for Mac</h3>
+        <h4>Guide to symbols:</h4>
+        <p><code>^</code> control</p>
+        <p><code>⌘</code> command</p>
+        <h4>Shortcuts:</h4>
+        <p><code>⌘ 0</code> go from main window to side bar</p>
+        <p><code>⌃ 0</code> go from side bar to main window</p>
+      </div>
     </section>
-    </>
   );
 }
 
