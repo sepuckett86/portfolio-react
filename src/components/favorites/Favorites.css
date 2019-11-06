@@ -1,0 +1,21 @@
+.Favorites {
+  padding: 2%;
+  text-align: center;
+
+  code { 
+    background-color: #eee; 
+    margin-right: 1em;
+    padding: 3px;
+  }
+
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
