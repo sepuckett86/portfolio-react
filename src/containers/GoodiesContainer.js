@@ -23,6 +23,11 @@ export default class GoodiesContainer extends Component {
         name: 'Cloudinary',
         url: 'https://cloudinary.com/',
         purpose: 'Free Storage for Website Images/Media'
+      },
+      {
+        name: 'Blisk',
+        url: 'https://blisk.io/',
+        purpose: 'Browser for Responsive Design'
       }
     ]
   }
