@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Favorites from '../components/favorites/Favorites';
+import Goodies from '../components/goodies/Goodies';
 
-export default class FavoritesContainer extends Component {
+export default class GoodiesContainer extends Component {
   state = {
     links: [
       {
@@ -14,7 +14,7 @@ export default class FavoritesContainer extends Component {
 
   render() {
     return (
-      <Favorites links={this.state.links}/>
+      <Goodies links={this.state.links}/>
     );
   }
 }
