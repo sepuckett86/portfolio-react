@@ -29,12 +29,22 @@ export default class GoodiesContainer extends Component {
         url: 'https://blisk.io/',
         purpose: 'Browser for Responsive Design'
       }
+    ],
+    shortcuts: [
+      {
+        keys: '⌘ 0',
+        description: 'go from main window to side bar'
+      },
+      {
+        keys: '⌃ 0',
+        description: 'go from side bar to main window'
+      }
     ]
   }
 
   render() {
     return (
-      <Goodies links={this.state.links}/>
+      <Goodies links={this.state.links} shortcuts={this.state.shortcuts} />
     );
   }
 }

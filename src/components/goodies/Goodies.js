@@ -2,10 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Goodies.css';
 
-export default function Goodies({ links }) {
+export default function Goodies({ links, shortcuts }) {
   const linkItems = links.map(link => (
     <li key={link.url}>
       <p><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a> | {link.purpose}</p>
+    </li>
+  ));
+
+  const shortcutItems = shortcuts.map(shortcut => (
+    <li key={shortcut.keys}>
+      <p><code>{shortcut.keys}</code> {shortcut.description}</p>
     </li>
   ));
 
@@ -27,13 +33,15 @@ export default function Goodies({ links }) {
         <p><code>^</code> control</p>
         <p><code>⌘</code> command</p>
         <h4>Shortcuts:</h4>
-        <p><code>⌘ 0</code> go from main window to side bar</p>
-        <p><code>⌃ 0</code> go from side bar to main window</p>
+        <ul>
+          {shortcutItems}
+        </ul>
       </div>
     </section>
   );
 }
 
 Goodies.propTypes = {
-  links: PropTypes.array.isRequired
+  links: PropTypes.array.isRequired,
+  shortcuts: PropTypes.array.isRequired
 };
