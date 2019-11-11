@@ -38,7 +38,19 @@ export default class GoodiesContainer extends Component {
       {
         keys: '⌃ 0',
         description: 'go from side bar to main window'
-      }
+      },
+      {
+        keys: '⌘ d',
+        description: 'when text is selected, it will select next instance of this text'
+      },
+      {
+        keys: '⌘ k',
+        description: 'when text is selected, it will skip next instance of this text'
+      },
+      {
+        keys: '⌘ ⇧ p',
+        description: 'open vscode shortcuts search'
+      },
     ]
   }
 
