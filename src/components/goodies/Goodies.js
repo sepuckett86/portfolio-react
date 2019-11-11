@@ -33,6 +33,7 @@ export default function Goodies({ links, shortcuts }) {
         <p><code>^</code> control</p>
         <p><code>⌘</code> command</p>
         <p><code>⇧</code> shift</p>
+        <p><code>⌥</code> option</p>
         <h4>Shortcuts:</h4>
         <ul>
           {shortcutItems}
