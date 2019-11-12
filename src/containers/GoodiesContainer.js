@@ -40,6 +40,14 @@ export default class GoodiesContainer extends Component {
         description: 'go from side bar to main window'
       },
       {
+        keys: '⇧ ⌘ e',
+        description: 'toggle selection of side bar and main window'
+      },
+      {
+        keys: '⌘ b',
+        description: 'show/hide side bar'
+      },
+      {
         keys: '⌘ d',
         description: 'when text is selected, it will select next instance of this text'
       },
@@ -74,6 +82,26 @@ export default class GoodiesContainer extends Component {
       {
         keys: '⌥ ⇧ ↑',
         description: 'duplicate line up'
+      },
+      {
+        keys: '⌥ ⇧ →',
+        description: 'select next word in line'
+      },
+      {
+        keys: '⌥ ⇧ ←',
+        description: 'select previous word in line'
+      },
+      {
+        keys: '⌃ `',
+        description: 'show/hide terminal'
+      },
+      {
+        keys: '⌘ /',
+        description: 'comment/uncomment selected text'
+      },
+      {
+        keys: '⌥ click',
+        description: 'start another cursor where you clicked'
       }
     ]
   }
