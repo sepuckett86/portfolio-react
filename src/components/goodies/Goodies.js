@@ -29,15 +29,19 @@ export default function Goodies({ links, shortcuts }) {
       <hr />
       <div className={styles.partition}>
         <h3 id="shortcuts">VSCode Shortcuts for Mac</h3>
-        <h4>Guide to symbols:</h4>
-        <p><code>^</code> control</p>
-        <p><code>⌘</code> command</p>
-        <p><code>⇧</code> shift</p>
-        <p><code>⌥</code> option</p>
-        <h4>Shortcuts:</h4>
-        <ul>
-          {shortcutItems}
-        </ul>
+        <div className={styles.partition}>
+          <h4>Guide to symbols:</h4>
+          <p><code>^</code> control</p>
+          <p><code>⌘</code> command</p>
+          <p><code>⇧</code> shift</p>
+          <p><code>⌥</code> option</p>
+        </div>
+        <div className={styles.partition}>
+          <h4>Shortcuts:</h4>
+          <ul>
+            {shortcutItems}
+          </ul>
+        </div>
       </div>
     </section>
   );
