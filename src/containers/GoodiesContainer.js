@@ -32,14 +32,6 @@ export default class GoodiesContainer extends Component {
     ],
     shortcuts: [
       {
-        keys: '⌘ 0',
-        description: 'go from main window to side bar'
-      },
-      {
-        keys: '⌃ 0',
-        description: 'go from side bar to main window'
-      },
-      {
         keys: '⇧ ⌘ e',
         description: 'toggle selection of side bar and main window'
       },
@@ -92,7 +84,7 @@ export default class GoodiesContainer extends Component {
         description: 'select previous word in line'
       },
       {
-        keys: '⌃ `',
+        keys: '⌘ j',
         description: 'show/hide terminal'
       },
       {
@@ -100,8 +92,28 @@ export default class GoodiesContainer extends Component {
         description: 'comment/uncomment selected text'
       },
       {
-        keys: '⌥ click',
+        keys: '⌥ (click)',
         description: 'start another cursor where you clicked'
+      },
+      {
+        keys: '⌘ ⇧ v',
+        description: 'when in markdown file, opens markdown view'
+      },
+      {
+        keys: '⌘ k (let go) z',
+        description: 'zen mode'
+      },
+      {
+        keys: '^ (hold) r arrow enter',
+        description: 'open recent repository in new window'
+      },
+      {
+        keys: '^ tab',
+        description: 'navigate between open windows'
+      },
+      {
+        keys: '⌘ ↓',
+        description: 'when in sidebar, opens selected file'
       }
     ]
   }
