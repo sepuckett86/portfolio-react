@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.Footer}>
       Website Created by Susan Puckett
-      <div className={styles.updated}>Last updated Nov. 2019</div>
+      <div className={styles.updated}>Last updated Dec. 2020</div>
     </footer>
   );
 }

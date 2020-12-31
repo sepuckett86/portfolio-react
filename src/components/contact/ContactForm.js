@@ -16,13 +16,15 @@ class ContactForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state })
-    })
-      .then(() => alert('Success!'))
-      .catch(error => alert(error));
+    if(window.confirm('Confirm message submission?')) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...this.state })
+      })
+        .then(() => alert('Success!'))
+        .catch(error => alert(error));
+    }
   };
 
   handleChange = ({ target }) => {
@@ -44,6 +46,7 @@ class ContactForm extends Component {
               name="name" 
               value={name} 
               onChange={this.handleChange} 
+              required
             />
           </label>
           <label>
@@ -53,6 +56,7 @@ class ContactForm extends Component {
               name="email" 
               value={email} 
               onChange={this.handleChange} 
+              required
             />
           </label>
           <label>
@@ -62,6 +66,7 @@ class ContactForm extends Component {
               value={message} 
               onChange={this.handleChange} 
               placeholder="Write a note here"
+              required
             />
           </label>
           <button type="submit">Send</button>
