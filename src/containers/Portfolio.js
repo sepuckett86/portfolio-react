@@ -8,10 +8,10 @@ export default class Portfolio extends Component {
     projects: [
       {
         title: 'Newzie 📰',
-        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, and @aramirezdecruz3148.',
+        description: 'Full-stack app that allows you to consume and curate news from a variety of sources. Made with @lacrivella, @carlosus, and @aramirezdecruz3148. Link is to a video of Alex demoing the site.',
         tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Express', 'Jest', 'TravisCI', 'Auth0', 'Netlify', 'Heroku', 'HTML/CSS'],
         github: 'https://github.com/The-Newsies/newsies-fe',
-        url: 'https://newzie.netlify.com',
+        url: 'https://www.youtube.com/watch?v=GF9-4miKsto&feature=youtu.be',
         image: 'https://res.cloudinary.com/sepuckett86/image/upload/v1569993992/Newzie_shdgvl.png'
       },
       {
