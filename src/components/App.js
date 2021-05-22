@@ -10,15 +10,15 @@ import GoodiesContainer from '../containers/GoodiesContainer';
 
 export default function App() {
   return (
-  <>
-    <Header />
-    <main>
-      <IntroContainer />
-      <Portfolio />
-      <ContactForm />
-      <GoodiesContainer />
-    </main>
-    <Footer />
-  </>
+    <>
+      <Header />
+      <main>
+        <IntroContainer />
+        <Portfolio />
+        <ContactForm />
+        <GoodiesContainer />
+      </main>
+      <Footer />
+    </>
   );
 }
