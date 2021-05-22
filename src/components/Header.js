@@ -5,10 +5,10 @@ import styles from './Header.css';
 function Header() {
   return (
     <header className={styles.Header}>
-      <p className={styles.name}>Hello and welcome!</p>
+      <a className={styles.name} href="/">Hello and welcome!</a>
       <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
     </header>
   );
