@@ -23,7 +23,7 @@
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "webpack serve --hot --mode=development --devtool eval-source-map",
-    "build": "webpack --mode=production --devtool source-map"
+    "build": "webpack --mode=production --devtool source-map && echo '/* /index.html 200' | cat >dist/_redirects "
   },
   "keywords": [],
   "author": "",
