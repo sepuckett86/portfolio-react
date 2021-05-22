@@ -2,13 +2,22 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <Header />
-  <main>
-    <IntroContainer />
-    <Portfolio />
-    <ContactForm />
-    <GoodiesContainer />
-  </main>
-  <Footer />
+  <BrowserRouter>
+    <Header />
+    <main>
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />
+        <Route
+          component={[Function]}
+          path="/docs"
+        />
+      </Switch>
+    </main>
+    <Footer />
+  </BrowserRouter>
 </Fragment>
 `;
