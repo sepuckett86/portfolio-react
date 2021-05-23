@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders 1`] = `
+<footer
+  className="Footer"
+>
+  Website Created by Susan Puckett
+  <div
+    className="updated"
+  >
+    Last updated May 2021
+  </div>
+</footer>
+`;

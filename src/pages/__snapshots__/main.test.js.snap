@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main page renders 1`] = `
+<Fragment>
+  <IntroContainer />
+  <Portfolio />
+  <ContactForm />
+  <GoodiesContainer />
+</Fragment>
+`;
