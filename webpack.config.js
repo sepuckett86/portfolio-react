@@ -30,6 +30,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: /global/,
         use: [
           {
             loader: 'style-loader'
@@ -53,8 +54,37 @@ module.exports = {
                   require('postcss-nested')(),
                   require('postcss-simple-vars')()
                 ]
-              },
-              
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /global/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: false,
+              importLoaders: 1
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              postcssOptions: {
+                plugins: [
+                  require('postcss-import')(),
+                  require('autoprefixer')(),
+                  require('postcss-nested')(),
+                  require('postcss-simple-vars')()
+                ]
+              }
             }
           }
         ]
