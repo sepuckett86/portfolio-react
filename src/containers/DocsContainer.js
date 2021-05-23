@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Markdown from '../components/Markdown';
+import MarkdownContainer from '../containers/MarkdownContainer';
 
 export default class DocsContainer extends Component {
   state = {
@@ -44,7 +44,7 @@ A table:
 
   render() {
     return (
-      <Markdown content={this.state.markdown} />
+      <MarkdownContainer content={this.state.markdown} />
     );
   }
 }
