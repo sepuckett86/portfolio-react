@@ -1,10 +1,10 @@
 import React from 'react';
-import GoodiesContainer from '../containers/GoodiesContainer';
+import DocsContainer from '../containers/DocsContainer';
 
 export default function Docs() {
   return (
     <>
-      <GoodiesContainer />
+      <DocsContainer />
     </>
   );
 }
