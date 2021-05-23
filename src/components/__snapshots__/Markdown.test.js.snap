@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown component renders 1`] = `
+<div
+  className="Markdown"
+>
+  <div
+    className="markdown-body"
+  >
+    <ReactMarkdown
+      remarkPlugins={
+        Array [
+          [Function],
+        ]
+      }
+      transformLinkUri={[Function]}
+    >
+      markdown here
+    </ReactMarkdown>
+  </div>
+</div>
+`;
