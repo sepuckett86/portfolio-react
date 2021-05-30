@@ -9,7 +9,7 @@ export default class DocsContainer extends Component {
 Hello, welcome to my docs page I use to keep track of coding concepts useful to me (and hopefully to you as well).
 
 ## Notation
-\`<Content in between arrow brackets like so>\` means to replace the brackets and content with what the content describes.
+\`<Content in between angle brackets like so>\` means to replace the brackets and content with what the content describes.
 > Example: \`git show <SHA here>\` becomes \`git show 690c6ed86164e1b57b6e3cd397c5d611eba66654\`
 
 ## Definitions
