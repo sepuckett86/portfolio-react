@@ -26,6 +26,16 @@ There is also a short version of this that you will see in the commit history of
 1. Resolve merge conflicts and commit them
 1. \`my-branch\` git push -f\\
     (Always double check you are in your branch when you force push with -f)
+
+#### A commit in the middle of my PR needs to be moved to its own PR.
+[Reference](https://swsblog.stanford.edu/blog/cherry-picking-small-git-lesson)
+1. Create new branch based off of main
+1. \`new-branch\` git cherry-pick <SHA of commit as found on GitHub or with git>
+1. Create a new PR or work locally with this branch.
+1. \`old-branch\` git revert <SHA of commit as found on Github or with git>\\
+    (this opens vim, use :wq to continue)
+1. \`old-branch\` git push
+
 ---
 
 ## Styling for this site
